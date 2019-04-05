@@ -1,0 +1,41 @@
+<form class="form-horizontal" action="" id="reg" method="POST" enctype="multipart/form-data">
+  <fieldset>
+    <div id="legend">
+      <img src="./images/turkfirmalarilogo.png" style="border:2px solid gray;" height="80px" width="300px" alt="Logo">
+          
+      <input type="text" id="username" name="username" placeholder="Lütfen Bir Kullanıcı Adı Giriniz" 
+
+      <label  for="name">Firmaların Adı:</label>
+         <input type="text" id="name" name="name" placeholder="Lütfen bir Firma İsmi Giriniz"  required="">
+         <select id="category" name="category"   required="">
+               </select>
+      
+         <input type="email" id="email" name="email" placeholder="Lütfen Firmanıza ait"   required="">
+  
+       <label   for="password">Şifrenizi Giriniz:</label>
+         <input type="password" id="password" name="password" placeholder="Lütfen güçlü bir şifre seçiniz"   required="">
+   
+       <label   for="telephone">Telefon Numarası:</label>
+         <input type="tel" name="telephone" id="telephone"  
+          pattern="[0-9]{2}[0-9]{3}[0-9]{3}[0-9]{4}" autocomple="off" placeholder="Lütfen bir telefon numarası giriniz" required="">
+       <label   for="category">Ülke Seçiniz:</label>
+         <select id="country" onchange="getBolgeler();" name="country"   required="">
+                   </select>
+         <label   for="city">Bölge Seçiniz:</label>
+ 	    <select name="bolge" onchange="getSehirler()" id="bolge"   required="">
+
+       </select>
+         <label   for="city">Şehir Seçiniz:</label>
+ 	    <select name="city" id="city"   required="">
+
+       </select>
+         <label   for="address">Adres:</label>
+ 	  <input type="text" name="address" id="address"   placeholder="Lütfen firmanızın TAM adresini giriniz." value="" required="">
+         <label   for="banner">Bir firma resmi seçiniz:</label>
+ 	  <input type="file" name="banner" id="banner" class="input-xlarge" placeholder="Bir resim dosyası seçiniz" required="">
+         <label   for="about">Firmanızı Tanıttığınız Bir Yazı Giriniz:</label>
+ 	  <textarea name="about" id="reg"   style="height:200px;padding-left:5px;padding-top:5px;" rows="10" cols="30" placeholder="Firmanızı Tanıttığınız Bir Yazı Giriniz:" required=""></textarea>
+          <button   type="submit" name="submit" value="Submit" style="width:50%;margin-top:10px;background-color:green;">Kayıt Ol</button>
+     
+  </fieldset>
+</form>
